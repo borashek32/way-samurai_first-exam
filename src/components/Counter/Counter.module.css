@@ -21,6 +21,7 @@
     background-color: #61dafb;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .counter {

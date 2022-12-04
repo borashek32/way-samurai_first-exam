@@ -1,6 +1,6 @@
 import css from './Counter.module.css'
 import {useState} from "react";
-import {Button} from "./Button";
+import {Button} from "../utils/Button";
 import {ChangeCounter} from "./ChangeCounter";
 
 type CounterType = {
@@ -11,8 +11,9 @@ export const Counter = (props: CounterType) => {
   let [counter, setCounter] = useState(0);
 
   const incHandler = () => {
-    if (counter <= 4) {
+    if (counter < 5) {
       setCounter(++counter);
+      console.log(counter);
     }
   }
   const resetHandler = () => {
